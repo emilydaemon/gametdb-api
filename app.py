@@ -21,7 +21,7 @@ def region_covers_urls(console, game_id):
             url = f"https://art.gametdb.com/{console}/cover/{region}/{game_id}.{fext}"
             res = requests.head(url, headers=headers)
             output[region] = url
-    return output;
+    return output
 
 def main_covers_urls(console, game_id):
     output = {}
